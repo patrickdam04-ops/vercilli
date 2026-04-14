@@ -1534,22 +1534,29 @@ section.dna-section .btn-white:hover {
     display: flex;
   }
 
+  .nav-logo,
+  .hamburger {
+    position: relative;
+    z-index: 10000;
+  }
+
   .nav-links {
     display: none;
     position: fixed;
-    top: var(--nav-height);
+    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 1);
-    backdrop-filter: blur(20px);
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    background: rgba(230, 237, 219, 0.98); /* Verde chiaro a tema */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: var(--space-xl);
-    padding-top: var(--space-3xl);
+    padding: 0;
     z-index: 9999;
-    overflow-y: auto;
   }
 
   .nav-links.active {
@@ -1557,7 +1564,9 @@ section.dna-section .btn-white:hover {
   }
 
   .nav-links a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary-900);
   }
 
   .grid-2,
