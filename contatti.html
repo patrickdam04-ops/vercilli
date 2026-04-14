@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti – Nutrizione Globale</title>
+  <meta name="description" content="Contatta Nutrizione Globale: prenota una visita nelle nostre sedi di Milano, Seregno, Bologna, Forlì, Ravenna, Rimini, Cervia e L'Aquila.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/logovercilli-removebg-preview.png" type="image/png">
+</head>
+<body>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logovercilli-removebg-preview.png" alt="Nutrizione Globale" class="nav-logo-img">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi Siamo</a>
+        <a href="metodo.html">Il Metodo</a>
+        <a href="protocolli.html">Protocolli</a>
+        <a href="contatti.html" class="active">Contatti</a>
+        <a href="https://wa.me/393336662267?text=Buongiorno%2C%20vorrei%20prenotare%20una%20consulenza." class="nav-cta" target="_blank" rel="noopener">Prenota</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════ PAGE HERO ═══════ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-header">
+        <div class="label"><span class="icon">📞</span> Contatti</div>
+        <h1>Prenota una consulenza</h1>
+        <p>Per informazioni o per prenotare una visita puoi contattare la segreteria. Il nostro staff ti aiuterà a fissare l'appuntamento nella sede più comoda per te.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTATTI + FORM ═══════ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Colonna Info -->
+        <div class="reveal-left">
+          <!-- Segreteria -->
+          <div class="contact-info-block">
+            <h3><span class="icon">📱</span> Segreteria</h3>
+            <div class="contact-phone">
+              <a href="tel:+393336662267">+39 333 666 2267</a>
+            </div>
+            <p class="contact-hours">🕘 Dal lunedì al venerdì, 9:00 – 18:00</p>
+            <div style="margin-top: var(--space-lg);">
+              <a href="https://wa.me/393336662267?text=Buongiorno%2C%20vorrei%20prenotare%20una%20consulenza." class="btn btn-primary" target="_blank" rel="noopener" style="font-size:0.88rem;">
+                💬 Scrivici su WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Sedi -->
+          <div class="contact-info-block">
+            <h3><span class="icon">📍</span> Le nostre sedi</h3>
+            <p style="font-size:0.92rem; color: var(--color-text-muted); margin-bottom: var(--space-lg);">Riceviamo su appuntamento nelle seguenti sedi:</p>
+
+            <div class="sede-item">
+              <div class="sede-dot"></div>
+              <div>
+                <div class="sede-name">Milano</div>
+                <div class="sede-address">Piazza IV Novembre 4</div>
+              </div>
+            </div>
+            <div class="sede-item">
+              <div class="sede-dot"></div>
+              <div>
+                <div class="sede-name">Seregno</div>
+                <div class="sede-address">Via Ballerini 10</div>
+              </div>
+            </div>
+            <div class="sede-item">
+              <div class="sede-dot"></div>
+              <div>
+                <div class="sede-name">Bologna</div>
+                <div class="sede-address">Via Santo Stefano 29</div>
+              </div>
+            </div>
+            <div class="sede-item">
+              <div class="sede-dot"></div>
+              <div>
+                <div class="sede-name">Forlì</div>
+                <div class="sede-address">Via Piancastelli 1/E</div>
+              </div>
+            </div>
+            <div class="sede-item">
+              <div class="sede-dot"></div>
+              <div>
+                <div class="sede-name">Ravenna</div>
+                <div class="sede-address">Via Romea 150/P</div>
+              </div>
+            </div>
+            <div class="sede-item">
+              <div class="sede-dot"></div>
+              <div>
+                <div class="sede-name">Rimini</div>
+                <div class="sede-address">Via Nuova Circonvallazione 57/B</div>
+              </div>
+            </div>
+            <div class="sede-item">
+              <div class="sede-dot"></div>
+              <div>
+                <div class="sede-name">Cervia</div>
+                <div class="sede-address">Indirizzo da definire</div>
+              </div>
+            </div>
+            <div class="sede-item">
+              <div class="sede-dot"></div>
+              <div>
+                <div class="sede-name">Ripa di Fagnano Alto (AQ)</div>
+                <div class="sede-address">Via Sant'Antonio snc</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonna Form -->
+        <div class="reveal-right">
+          <div class="contact-form">
+            <h3>✉️ Richiedi di essere ricontattato</h3>
+            <p class="form-subtitle">Preferisci essere contattato direttamente? Lascia i tuoi recapiti e ti richiameremo per fissare un appuntamento o fornirti tutte le informazioni.</p>
+
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nome">Nome *</label>
+                  <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                </div>
+                <div class="form-group">
+                  <label for="cognome">Cognome *</label>
+                  <input type="text" id="cognome" name="cognome" placeholder="Il tuo cognome" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="la.tua@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Telefono *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+39 ..." required>
+              </div>
+
+              <div class="form-group">
+                <label for="sede">Sede preferita</label>
+                <select id="sede" name="sede">
+                  <option value="">Seleziona una sede...</option>
+                  <option value="Milano">Milano</option>
+                  <option value="Seregno">Seregno</option>
+                  <option value="Bologna">Bologna</option>
+                  <option value="Forlì">Forlì</option>
+                  <option value="Ravenna">Ravenna</option>
+                  <option value="Rimini">Rimini</option>
+                  <option value="Cervia">Cervia</option>
+                  <option value="L'Aquila">Ripa di Fagnano Alto (AQ)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="messaggio">Messaggio</label>
+                <textarea id="messaggio" name="messaggio" placeholder="Descrivi brevemente il motivo della tua richiesta..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                👉 Lascia i tuoi contatti
+              </button>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <div class="checkmark">✅</div>
+              <h3>Richiesta inviata!</h3>
+              <p style="margin-top: var(--space-md);">Grazie per averci contattato. Ti richiameremo il prima possibile per fissare un appuntamento.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA ═══════ -->
+  <section class="cta-section">
+    <div class="container" style="position:relative; z-index:1;">
+      <h2 class="reveal">Inizia il tuo percorso</h2>
+      <p class="reveal">Siamo qui per aiutarti. Contattaci e troveremo insieme la soluzione migliore per te.</p>
+      <div class="reveal">
+        <a href="https://wa.me/393336662267?text=Buongiorno%2C%20vorrei%20prenotare%20una%20consulenza." class="btn btn-white" target="_blank" rel="noopener">
+          <span class="btn-icon">💬</span> Scrivici su WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Nutrizione Globale</h3>
+          <p>Un approccio scientifico, su misura, basato su valutazioni cliniche e test avanzati per la tua salute.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigazione</h4>
+          <a href="index.html">Home</a>
+          <a href="chi-siamo.html">Chi Siamo</a>
+          <a href="metodo.html">Il Metodo</a>
+          <a href="protocolli.html">Protocolli</a>
+          <a href="contatti.html">Contatti</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sedi</h4>
+          <a href="contatti.html">Milano</a>
+          <a href="contatti.html">Seregno</a>
+          <a href="contatti.html">Bologna</a>
+          <a href="contatti.html">Forlì</a>
+          <a href="contatti.html">Ravenna</a>
+          <a href="contatti.html">Rimini</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contatti</h4>
+          <a href="tel:+393336662267">📱 +39 333 666 2267</a>
+          <a href="https://wa.me/393336662267" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <a href="contatti.html">✉️ Modulo contatto</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Nutrizione Globale. Tutti i diritti riservati.</span>
+        <span>Dott. Davide M. Vercilli &amp; Dott. Primo Vercilli</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
