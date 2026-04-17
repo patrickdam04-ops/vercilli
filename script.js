@@ -172,4 +172,23 @@ document.addEventListener('DOMContentLoaded', () => {
     counterElements.forEach(el => counterObserver.observe(el));
   }
 
+  // ── Pricing Cards Mobile Toggle ──
+  const pricingCards = document.querySelectorAll('.pricing-card');
+  const pricingComplete = document.querySelector('.pricing-complete');
+
+  const toggleExpanded = function() {
+    // Only apply toggle logic if we are on mobile (where the expanded class matters)
+    if (window.innerWidth <= 768) {
+      this.classList.toggle('expanded');
+    }
+  };
+
+  pricingCards.forEach(card => {
+    card.addEventListener('click', toggleExpanded);
+  });
+
+  if (pricingComplete) {
+    pricingComplete.addEventListener('click', toggleExpanded);
+  }
+
 });

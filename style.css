@@ -1637,12 +1637,122 @@ section.dna-section .btn-white:hover {
   }
 
   .pricing-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
   }
 
-  .pricing-complete-inner {
+  /* Collapsed state: show only icon + title */
+  .pricing-card {
+    padding: var(--space-md);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .pricing-card .pricing-desc,
+  .pricing-card .pricing-checklist,
+  .pricing-card .pricing-duration {
+    display: none;
+  }
+
+  .pricing-card .pricing-header {
+    margin-bottom: 0;
+  }
+
+  .pricing-card .pricing-header h3 {
+    font-size: 0.85rem;
+  }
+
+  .pricing-card .pricing-type {
+    font-size: 0.65rem;
+  }
+
+  .pricing-card .pricing-icon {
+    font-size: 1.6rem;
+  }
+
+  /* Expanded state: full width, show everything */
+  .pricing-card.expanded {
+    grid-column: 1 / -1;
+    padding: var(--space-2xl);
+    text-align: left;
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .pricing-card.expanded .pricing-desc,
+  .pricing-card.expanded .pricing-checklist,
+  .pricing-card.expanded .pricing-duration {
+    display: block;
+  }
+
+  .pricing-card.expanded .pricing-header {
+    margin-bottom: var(--space-lg);
+  }
+
+  .pricing-card.expanded .pricing-header h3 {
+    font-size: 1.35rem;
+  }
+
+  .pricing-card.expanded .pricing-type {
+    font-size: 0.75rem;
+  }
+
+  .pricing-card.expanded .pricing-icon {
+    font-size: 2rem;
+  }
+
+  /* Percorso Completo collapsed */
+  .pricing-complete {
+    cursor: pointer;
+    padding: var(--space-lg);
+    text-align: center;
+  }
+
+  .pricing-complete .pricing-desc,
+  .pricing-complete .pricing-checklist,
+  .pricing-complete .pricing-duration {
+    display: none;
+  }
+
+  .pricing-complete .pricing-complete-inner {
     grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .pricing-complete .pricing-complete-left h3 {
+    font-size: 0.9rem;
+  }
+
+  .pricing-complete .pricing-complete-left p {
+    display: none;
+  }
+
+  /* Percorso Completo expanded */
+  .pricing-complete.expanded {
+    padding: var(--space-2xl);
+    text-align: left;
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .pricing-complete.expanded .pricing-desc,
+  .pricing-complete.expanded .pricing-checklist,
+  .pricing-complete.expanded .pricing-duration {
+    display: block;
+  }
+
+  .pricing-complete.expanded .pricing-complete-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .pricing-complete.expanded .pricing-complete-left h3 {
+    font-size: 1.4rem;
+  }
+
+  .pricing-complete.expanded .pricing-complete-left p {
+    display: block;
   }
 
   .proto-numbered-card {
@@ -1791,13 +1901,7 @@ section.dna-section .btn-white:hover {
     font-size: 0.75rem;
   }
 
-  .pricing-card {
-    padding: var(--space-lg);
-  }
-
-  .pricing-complete {
-    padding: var(--space-lg);
-  }
+  /* pricing mobile overrides handled in 768px breakpoint */
 
   .proto-card-content h3 {
     font-size: 1.15rem;
