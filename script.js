@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (successMsg) successMsg.classList.add('show');
       
       // Open mailto
-      window.location.href = `mailto:info@nutrizioneglobale.it?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:patrickdam04@gmail.com?subject=${subject}&body=${body}`;
     });
   }
 
